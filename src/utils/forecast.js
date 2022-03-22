@@ -16,7 +16,13 @@ const forecast = (long, lat, callback) => {
         res.weather[0].description +
         ", It is currently " +
         res.main.temp +
-        " degrees out.";
+        " degrees out.\n" +
+        "Maintaining a humidity of " +
+        res.main.humidity +
+        "g/m^3\n" +
+        "Wind speed: " +
+        res.wind.speed +
+        "km/h";
       callback(undefined, data);
     })
     .catch((err) => {
