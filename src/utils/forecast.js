@@ -20,7 +20,7 @@ const forecast = (long, lat, callback) => {
         "\nMaintaining a humidity of " +
         res.main.humidity +
         " g/m³\n" +
-        "and a wind speed of" +
+        "and a wind speed of " +
         res.wind.speed +
         "km/h";
       callback(undefined, data);
